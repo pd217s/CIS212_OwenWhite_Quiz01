@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz One</title>
+	</head>
+	<body>
+		<h1 id = "h1">Quiz One</h1>
+		<button type="button" name = "button" onclick="larger()">+</button>
+		<button type="button" name = "button" onclick="smaller()">-</button>
+		
+		<script type="text/javascript">
+			var SizeOfText = 100;
+			var StringSizeOfText = String(SizeOfText) + "px" 
+			//Im sure there is a better solution here but this is the one that is simplest to me
+			document.getElementById("h1").style.fontSize = StringSizeOfText;
+			
+			for (i = 0; i < 4; i++)
+			{
+				console.log("balls");
+			}
+			function larger()
+			{
+				SizeOfText = SizeOfText + 1;
+				StringSizeOfText = String(SizeOfText) + "px";
+				document.getElementById("h1").style.fontSize = StringSizeOfText;
+			}
+			function smaller()
+			{
+				SizeOfText = SizeOfText - 1;
+				StringSizeOfText = String(SizeOfText) + "px";
+				document.getElementById("h1").style.fontSize = StringSizeOfText;
+			}
+		</script>
+	</body>	
+</html>

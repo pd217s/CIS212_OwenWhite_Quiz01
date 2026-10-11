@@ -1,0 +1,1 @@
+This is a simple html and java script program. It starts by setting the size of the header. using the puss and minus buttons increases and decreases the size of the header by one unit. it is able to do this by holding onto the size and then translating that to a string. It has to be in a string format because of how html handles text sizes.
